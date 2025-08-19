@@ -174,12 +174,13 @@ def calculate_metrics_postgresql(curr, i):
         & (raw_data.timestamp < (begin + datetime.timedelta(i + 1)))
     ].copy()
 
-    if current_data.empty:
-        logging.warning(f"No data found for day {i} "
-                        f"({(begin + datetime.timedelta(i)).date()}), skipping.")
-        return
+    # if current_data.empty:
+    #     logging.warning(f"No data found for day {%s}, i)
+    #                     logging.info('%s train data: %s', X_train.shape, y_train.shape)
+    #                     f"({(begin + datetime.timedelta(i)).date()}), skipping.")
+    #     return
 
-    logging.info(f"Day {i}: processing {len(current_data)} rows")
+    logging.info("Day {%s}: processing {len(%s)} rows", i, current_data)
 
     # Prediction
     X_current = current_data.drop(columns=['timestamp', 'actual'])

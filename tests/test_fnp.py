@@ -3,6 +3,7 @@ Runs several tests for preprocessing
 """
 
 # pylint: disable=unsubscriptable-object
+# pylint: disable=duplicate-code
 import os
 import sys
 import pandas as pd
