@@ -1,0 +1,12 @@
+data:
+  X_test: datasets/X_test_2025-08-19.parquet
+  X_train: datasets/X_train_2025-08-19.parquet
+  X_val: datasets/X_val_2025-08-19.parquet
+  y_test: datasets/y_test_2025-08-19.csv
+  y_train: datasets/y_train_2025-08-19.csv
+  y_val: datasets/y_val_2025-08-19.csv
+mlflow:
+  experiment_id: '1'
+  experiment_name: mlflow-fn
+  model_bucket: fake-news-prediction-katja
+  production_run_id: 75da5bda877b4ac0a813bb172dd4f817
