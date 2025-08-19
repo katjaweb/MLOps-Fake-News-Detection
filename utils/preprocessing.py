@@ -13,6 +13,8 @@ from textblob import TextBlob
 from langdetect import DetectorFactory, detect
 from nltk.corpus import stopwords
 
+# pylint: disable=duplicate-code
+
 nlp = spacy.load('en_core_web_sm')
 nltk.download('stopwords')
 stopwords = stopwords.words('english')

@@ -2,7 +2,7 @@
 Predicts whether news are fake or real, its probability and actual run id.
 """
 
-# Test
+# pylint: disable=duplicate-code
 import os
 import sys
 import logging
