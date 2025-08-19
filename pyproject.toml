@@ -1,0 +1,18 @@
+[tool.pylint.messages_control]
+
+disable = [
+    "line-too-long",
+    "broad-exception-caught",
+    "bare-except",
+    "too-many-arguments",
+    "too-many-positional-arguments",
+    "too-many-locals",
+    "too-many-statements",
+    "invalid-name",
+    "wrong-import-position"
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+skip-string-normalization = true
